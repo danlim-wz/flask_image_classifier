@@ -1,0 +1,52 @@
+body {
+  background-color:white;
+}
+
+.predict {
+  color: goldenrod;
+  font-size:30px;
+  font-family: "Montserrat",sans-serif;
+}
+  
+h1 {
+  color: goldenrod;
+  text-align: center;
+  font-size: 65px;
+  font-family: "Montserrat",sans-serif;
+}
+
+.material-icons.md-48 { font-size: 48px; }
+
+button {
+  color:white;
+  border: none;
+  height: 60px;
+  width: 100px;
+  background-color: maroon;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 53%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat",sans-serif;
+}
+
+input[type="file"] {
+  display:none;
+}
+
+label {
+  color:white;
+  height: 60px;
+  width: 220px;
+  background-color: maroon;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 40%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat",sans-serif;
+}

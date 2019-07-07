@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Classifier</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"/> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css') }}"/>
+</head>
+
+
+<body>
+    <div class="predict">
+        <script>
+            var predict = {{predict}}
+        </script>
+    </div>
+    <p><h1>
+        <i class="material-icons md-48">
+        image_search
+        </i>
+        Image Classifier
+    </h1></p>
+
+    <!-- <script>
+        var predict = { predict }
+    </script> -->
+
+    <form action="upload" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file" name="input_file" accept="image/*"/>
+        <label for="file">
+            <i class="material-icons">
+                add_photo_alternate
+            </i>
+            Upload an image
+        </label>
+        <button type="submit">Predict</button>
+    </form>
+
+    <div style="text-align: center">
+        <img src="{{url_for('static', filename=image_path)}}">
+    </div>
+
+</body>
+
+
+</html>
