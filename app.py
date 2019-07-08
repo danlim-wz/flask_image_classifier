@@ -27,8 +27,8 @@ def classify_image():
         prediction = resnet_model.predict(image)
         prediction = decode_predictions(prediction)[0][0][1]
         prediction = prediction.replace('_',' ')    
-        return render_template("upload_button.html", image_path = filename, prediction = 'Prediction: '+prediction)
-    return render_template("upload_button.html", image_path = 'landing_page_pic.jpg')
+        return render_template("upload.html", image_path = filename, prediction = 'Prediction: '+prediction)
+    return render_template("upload.html", image_path = 'landing_page_pic.jpg')
 
 if __name__ == '__main__':
     resnet_model = ResNet50(weights='imagenet')
