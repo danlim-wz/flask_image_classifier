@@ -10,21 +10,12 @@
 
 
 <body>
-    <div class="predict">
-        <script>
-            var predict = {{predict}}
-        </script>
-    </div>
     <p><h1>
         <i class="material-icons md-48">
         image_search
         </i>
         Image Classifier
     </h1></p>
-
-    <!-- <script>
-        var predict = { predict }
-    </script> -->
 
     <form action="upload" method="POST" enctype="multipart/form-data">
         <input type="file" id="file" name="input_file" accept="image/*"/>
@@ -40,6 +31,8 @@
     <div style="text-align: center">
         <img src="{{url_for('static', filename=image_path)}}">
     </div>
+
+    <h6>{{ prediction }}</h6>
 
 </body>
 
