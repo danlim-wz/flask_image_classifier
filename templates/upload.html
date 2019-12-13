@@ -9,14 +9,18 @@
 
 
 <body>
+    <form action="upload_zip" method="POST" enctype="multipart/form-data">
+        <button id='navigation' type="submit">Upload a zip</button>
+    </form>
+
     <p><h1>
         <i class="material-icons md-48">
         image_search
         </i>
-        Image Classifier
+        Data Labelling Tool
     </h1></p>
 
-    <form action="image-classifier" method="POST" enctype="multipart/form-data">
+    <form action="display" method="POST" enctype="multipart/form-data">
         <input type="file" id="file" name="input_file" accept="image/*"/>
         <label for="file">
             <i class="material-icons">
@@ -24,14 +28,17 @@
             </i>
             Upload an image
         </label>
-        <button type="submit">Predict</button>
+        <button id='predict' type="submit">Predict</button>
     </form>
 
+    
     <div style="text-align: center">
         <img src="{{url_for('static', filename=image_path)}}">
     </div>
 
-    <h6>{{ prediction }}</h6>
+    <h1>{{ prediction }}</h1>
+
+
 
 </body>
 

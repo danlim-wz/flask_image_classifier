@@ -5,7 +5,7 @@ body {
 h1 {
   color: goldenrod;
   text-align: center;
-  font-size: 65px;
+  font-size: 60px;
   font-family: "Montserrat",sans-serif;
 }
 
@@ -17,7 +17,7 @@ h6 {
   font-family: "Montserrat",sans-serif;
 }
 
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-48 { font-size: 40px; }
 
 button {
   color:white;
@@ -32,10 +32,59 @@ button {
   display: flex;
   justify-content: center;
   font-family: "Montserrat",sans-serif;
+  vertical-align: top;
 }
 
 input[type="file"] {
   display:none;
+}
+
+#predict {
+  color:white;
+  border: none;
+  height: 60px;
+  width: 100px;
+  background-color: maroon;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 55%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat",sans-serif;
+  vertical-align: top;
+}
+
+#download {
+  color:white;
+  border: none;
+  height: 60px;
+  width: 100px;
+  background-color: maroon;
+  position: absolute;
+  margin-top: 24%;
+  margin-left: 55%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat",sans-serif;
+  vertical-align: top;
+}
+
+#navigation {
+  color:white;
+  border: none;
+  height: 40px;
+  width: 180px;
+  background-color:maroon;
+  position: absolute;
+  margin-top: 0%;
+  margin-left: 0%;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat",sans-serif;
+  vertical-align: top;
 }
 
 label {

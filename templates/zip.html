@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload zip file</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mystyle.css') }}"/>
+</head>
+
+
+<body>
+    <form action="landing_page" method="POST" enctype="multipart/form-data">
+        <button id='navigation' type="submit">Back</button>
+    </form>
+
+    <form action="label_images" method="POST" enctype="multipart/form-data">
+        <input type="file" id="file" name="input_file" accept="application/zip"/>
+        <label for="file">
+            Choose a zip file
+        </label>
+        <button id='download' type="submit">Upload</button>
+    </form>
+
+</body>
+
+
+</html>
