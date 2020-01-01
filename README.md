@@ -2,7 +2,9 @@
 
 The following repository contains a web app for users to label their raw image data, expediting the process of data cleaning and labelling.
 
-Users may upload a zip file where the app will then sort and return the images in folders titled with the predicted image class.
+Users may upload a zip file where the app will then sort and return the images in folders titled with the predicted image class based on the model utilized.
+
+Using your own pretrained model is as simple as importing it and changing a single line of code in the *app.py* file.
 
 ![web_app](https://user-images.githubusercontent.com/52344837/70791925-b544b680-1dca-11ea-8386-d1cc04939981.gif)
 
