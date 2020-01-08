@@ -6,7 +6,7 @@ Users may upload a zip file where the app will then sort and return the images i
 
 Using your own pretrained model is as simple as importing it and changing a single line of code in the *app.py* file.
 
-![web_app](https://user-images.githubusercontent.com/52344837/70791925-b544b680-1dca-11ea-8386-d1cc04939981.gif)
+![](images/web_app.gif)
 
 # Usage
 1) Clone/download this repository

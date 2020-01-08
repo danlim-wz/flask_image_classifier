@@ -9,9 +9,19 @@
 
 
 <body>
+
     <form action="upload_zip" method="POST" enctype="multipart/form-data">
         <button id='navigation' type="submit">Upload a zip</button>
     </form>
+    
+    <div class="dropdown">
+        <button class="dropbtn">Choose label</button>
+            <div class="dropdown-content">
+                <a href="{{ url_for('get_img')}}">Image</a>
+                <a href="{{ url_for('get_box')}}">Box</a>
+                <a href="{{ url_for('get_mask')}}">Mask</a>
+            </div>
+    </div>
 
     <p><h1>
         <i class="material-icons md-48">
