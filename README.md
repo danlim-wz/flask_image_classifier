@@ -26,7 +26,9 @@ Alternatively, try it out with Docker:
 
 # Supported classes
 
-The model uses a ResNet50 architecture which was pretrained on the ImageNet dataset. Visit this link for supported image classes: http://image-net.org/explore
+The classification model uses a ResNet50 architecture which was pretrained on the ImageNet dataset. Visit this link for supported image classes: http://image-net.org/explore
+
+The box and mask model uses Mask RCNN trained on the COCO dataset. Visit this link to explore the classes supported: http://cocodataset.org/#explore
 
 # Implementation
 
